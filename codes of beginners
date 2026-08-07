@@ -1,76 +1,87 @@
-#---------------------code and login------------------------------- #
+# --------------------- Login --------------------- #
 
-# login = input("Write the login: ")
-# code = int(input("Write the code: "))
+login = input("Write the login: ")
+code = int(input("Write the code: "))
 
-# if login == "admin" and code == 1234:
-#     print("welcome")
-# else:
-#     print("check your login or code !")
-    
-#-----------------------Age------------------------------- #
+if login == "admin" and code == 1234:
+    print("Welcome")
+else:
+    print("Check your login or code!")
 
+# --------------------- Age --------------------- #
 
-# age = int(input("input your age: "))
-# if age >= 13:
-#     print("you can watch this film !")
-# else: 
-#     print("you aren't submitted ")
+age = int(input("Input your age: "))
 
-#-----------------------sum--------------------------- #
+if age >= 13:
+    print("You can watch this film!")
+else:
+    print("You are not allowed.")
 
-# sum = int(input("write amount of sum: "))
-# if sum >= 500000:
-#     discoint = 500000 * 0.9
-#     print(discoint)
-# else:
-#     print(sum)
+# --------------------- Discount --------------------- #
 
-#---------------------battery----------------------------- #
+total = int(input("Write the amount: "))
 
-# battery = int(input("battery : "))
-# if  battery < 20:
-#     print("pleese charge the phone")
-# elif battery > 20 or battery < 80:
-#     print("battery life is good")
-# elif battery > 80:
-#     print("battery life is nearly full")
+if total >= 500000:
+    discount = total * 0.9
+    print("Price after discount:", discount)
+else:
+    print("Price:", total)
 
-#-----------------------student list-------------------------- #
+# --------------------- Battery --------------------- #
 
-# students = []
-# names = input("names:")
-# list = students.appent(names)
-# print(list)
-#------------------------Code-------------------------- #
+battery = int(input("Battery percentage: "))
 
-# code = int(input("input the code: "))
-# if len(code) < 8:
-#     print("numbers so low")
-# else:
-#     print(f"{code} - code accepted")
+if battery < 20:
+    print("Please charge the phone.")
+elif 20 <= battery <= 80:
+    print("Battery life is good.")
+else:
+    print("Battery is nearly full.")
 
-#-------------------------Market--------------------------- #
+# --------------------- Student List --------------------- #
 
-# quantity_of_products = int(input("how many products you wanna buy: "))
-# product = []
-# products = input("enter the products:")
-# product.append(products)
-# print("your products:",product)
+students = []
 
-#--------------------------quantity of emodges------------------------ #
+name = input("Enter a student's name: ")
+students.append(name)
 
-# emodge = input("emodge: ")
-# length  = len(emodge)
-# print(length)
+print("Students:", students)
 
-#------------------------find the name----------------------------- #
+# --------------------- Code --------------------- #
 
+code = input("Input the code: ")
+
+if len(code) < 8:
+    print("Code is too short.")
+else:
+    print(f"{code} - Code accepted")
+
+# --------------------- Market --------------------- #
+
+quantity_of_products = int(input("How many products do you want to buy? "))
+
+products = []
+
+for i in range(quantity_of_products):
+    product = input(f"Enter product {i + 1}: ")
+    products.append(product)
+
+print("Your products:", products)
+
+# --------------------- Emoji Count --------------------- #
+
+emoji = input("Emoji: ")
+print("Number of characters:", len(emoji))
+
+# --------------------- Find the Name --------------------- #
 
 names = []
 
-name = input(" name: ")
-names.append(name)
+count = int(input("How many names do you want to enter? "))
+
+for i in range(count):
+    name = input(f"Enter name {i + 1}: ")
+    names.append(name)
 
 find = input("Enter the name you're looking for: ")
 
@@ -79,8 +90,7 @@ if find in names:
 else:
     print("There is no such name in the list.")
 
-#------------------guest list-------------------------- #
-
+# --------------------- Guest List --------------------- #
 
 guest_count = int(input("Enter the number of guests: "))
 
@@ -93,8 +103,3 @@ for i in range(guest_count):
 print("\nTotal guests:", len(guests))
 print("First guest:", guests[0])
 print("Last guest:", guests[-1])
-
-
-
-
-
