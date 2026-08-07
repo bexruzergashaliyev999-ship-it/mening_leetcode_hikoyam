@@ -54,7 +54,7 @@ code = input("Input the code: ")
 if len(code) < 8:
     print("Code is too short.")
 else:
-    print(f"{code} - Code accepted")
+    print(f"{code} Code accepted")
 
 # --------------------- Market --------------------- #
 
@@ -77,14 +77,11 @@ print("Number of characters:", len(emoji))
 
 names = []
 
-count = int(input("How many names do you want to enter? "))
-
+count = int(input("number of names: "))
 for i in range(count):
     name = input(f"Enter name {i + 1}: ")
     names.append(name)
-
 find = input("Enter the name you're looking for: ")
-
 if find in names:
     print("Found!", find)
 else:
