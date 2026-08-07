@@ -67,15 +67,17 @@
 #------------------------find the name----------------------------- #
 
 
-# list = []
-# names = input("names: ")
-# list.append(names)
-# find = ("enter the name that you're looking for: ")
-# if find in list:
-#     print("found !",list, find)
-# else:
-#     print("there is no such name on the list")
+names = []
 
+name = input("Enter a name: ")
+names.append(name)
+
+find = input("Enter the name you're looking for: ")
+
+if find in names:
+    print("Found!", find)
+else:
+    print("There is no such name in the list.")
 
 #------------------guest list-------------------------- #
 
