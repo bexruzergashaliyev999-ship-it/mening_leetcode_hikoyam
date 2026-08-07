@@ -69,7 +69,7 @@
 
 names = []
 
-name = input("Enter a name: ")
+name = input(" name: ")
 names.append(name)
 
 find = input("Enter the name you're looking for: ")
